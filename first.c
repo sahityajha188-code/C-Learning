@@ -1,12 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(){
-    int a[2][10];
-    for(int i=1 ; i<=10; i++){
-        a[0][i-1] = 2*i;
-        a[1][i-1] = 3*i;
-        printf("%d \t %d \n", a[0][i-1] , a[1][i-1] );
-    }
+void swap(int *a, int*b){
+    int temp = *a;
+*a = *b;
+*b = temp;
 
+}
+
+int main(){
+  
+int a[10] = {1,2,0,4,5,0,6,0,7,11};
+
+
+for (int i = 0, j=0 ; i<5, j<10; i++, j++){
+    if (i  )
+    int temp = a[i];
+    a[i]=a[9-i];
+    a[9-i]=temp;
+    
+    printf("%d \t", a[j]);
+
+    
+}
 }
